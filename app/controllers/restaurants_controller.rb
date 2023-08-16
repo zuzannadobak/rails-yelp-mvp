@@ -12,6 +12,7 @@ class RestaurantsController < ApplicationController
   # POST "restaurants/38/reviews"
   def show
     @restaurant = Restaurant.find(params[:id])
+    @review = Review.new
   end
 
   def new
